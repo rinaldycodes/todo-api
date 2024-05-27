@@ -1,0 +1,48 @@
+###
+
+GET https://example.com/topics/1 HTTP/1.1
+
+### add new
+POST http://localhost:8001/api/v1/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Membuat Login UI",
+    "description": "Membuat Login UI dengan menggunakan react native, dengan login email dan no telepon",
+    "startDate": "2024-05-25",
+    "dueDate": "2024-05-30"
+}
+
+### findAll
+GET http://localhost:8001/api/v1/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Membuat Login UI",
+    "description": "Membuat Login UI dengan menggunakan react native, dengan login email dan no telepon",
+    "startDate": "2024-05-25",
+    "dueDate": "2024-05-30"
+}
+
+### findAll
+GET http://localhost:8001/api/v1/tasks/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Membuat Login UI",
+    "description": "Membuat Login UI dengan menggunakan react native, dengan login email dan no telepon",
+    "startDate": "2024-05-25",
+    "dueDate": "2024-05-30"
+}
+
+### update
+PUT http://localhost:8001/api/v1/tasks/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Membuat Login UI UPDATED"
+}
+
+###
+DELETE http://localhost:8001/api/v1/tasks/14 HTTP/1.1
+content-type: application/json
